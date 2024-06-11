@@ -7,6 +7,7 @@
 <details>
 <summary>팀장 : 조현아</summary>
 <div markdown="1">
+<br>
     
 - 뉴스피드 CRUD
 - 뉴스피드 페이지네이션
@@ -16,6 +17,7 @@
 <details>
 <summary>팀원 : 김원기</summary>
 <div markdown="1">
+    <br>
     
 - 회원가입, 회원 탈퇴
 - 이메일 인증
@@ -25,6 +27,7 @@
 <details>
 <summary>팀원 : 이윤성</summary>
 <div markdown="1">
+    <br>
     
 - Token, 인증/인가 필터
 - 로그인, 로그아웃
@@ -34,6 +37,7 @@
 <details>
 <summary>팀원 : 정효진</summary>
 <div markdown="1">
+    <br>
     
 - 댓글 CRUD
 </div>
@@ -42,6 +46,7 @@
 <details>
 <summary>팀원 : 홍용근</summary>
 <div markdown="1">
+    <br>
     
 - 유저 프로필
 - 좋아요 기능
