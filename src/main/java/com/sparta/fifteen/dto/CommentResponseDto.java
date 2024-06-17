@@ -1,11 +1,13 @@
 package com.sparta.fifteen.dto;
 
 import com.sparta.fifteen.entity.Comment;
+import lombok.Builder;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
 
 @Getter
+@Builder
 public class CommentResponseDto {
     private Long id;
     private String comment;

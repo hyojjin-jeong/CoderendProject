@@ -2,15 +2,13 @@ package com.sparta.fifteen.dto;
 
 import com.sparta.fifteen.entity.NewsFeed;
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class NewsFeedResponseDto {
     private Long id;
     private Long authorId;

@@ -3,6 +3,7 @@ package com.sparta.fifteen.entity;
 import com.sparta.fifteen.dto.NewsFeedRequestDto;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,6 +23,13 @@ public class NewsFeed extends Timestamped{
     private String content;
 
     private Long likes;
+
+    @Builder
+    public NewsFeed(String content) {
+        this.content = content;
+        this.likes = 0L;
+    }
+
     public NewsFeed(NewsFeedRequestDto newsFeedRequestDto){
         this.authorId = newsFeedRequestDto.getAuthorId();
         this.content = newsFeedRequestDto.getContent();

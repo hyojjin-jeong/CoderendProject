@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -65,6 +66,11 @@ public class User {
 //
 //    @OneToMany(mappedBy = "user")
 //    private List<Likes> likesList = new ArrayList<>();
+    @Builder
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
     public User(UserRegisterRequestDto requestDto) {
         this.username = requestDto.getUsername();
